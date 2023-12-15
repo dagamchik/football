@@ -14,9 +14,11 @@
                 let objToDeep = {
                     action: "open",
                     actionId: Date.now() + "",
+                    callbackUrl: "http://someurl.com",
                     url: "https://dexsport.io",
                     protocol: "TronLink",
                     version: "1.0",
+                    chainId: "0x2b6653dc"
                 }
                 console.log(encodeURIComponent(JSON.stringify(objToDeep)))
                 console.log(JSON.stringify(objToDeep))

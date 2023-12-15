@@ -12,11 +12,16 @@
             document.querySelector('.click').addEventListener('click', (e) => {
                 e.preventDefault()
                 let objToDeep = {
-                    action: "open",
-                    actionId: Date.now() + "",
-                    url: "https://dexsport.io",
-                    protocol: "TronLink",
+                  url: "https://justlend.org/#/home",
+                  callbackUrl: "http://someurl.com",
+                  dappIcon: "",
+                  dappName: "Test demo",
+                  protocol: "TronLink",
                     version: "1.0",
+                  chainId: "0x2b6653dc",
+                  action: "login",
+                  actionId: Date.now() + ""
+
                 }
                 console.log(encodeURIComponent(JSON.stringify(objToDeep)))
                 console.log(JSON.stringify(objToDeep))

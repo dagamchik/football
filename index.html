@@ -19,7 +19,12 @@
                 }
                 console.log(encodeURIComponent(JSON.stringify(objToDeep)))
                 console.log(JSON.stringify(objToDeep))
-                window.location.href = `tronlinkoutside://pull.activity?param=${JSON.stringify(objToDeep)}`
+                window.location.href = `tronlinkoutside://pull.activity?param=${encodeURIComponent(JSON.stringify({
+  "url": "https://www.tronlink.org/",
+  "action": "open",
+  "protocol": "tronlink",
+  "version": "1.0"
+}))}`
             })
         })
     </script>

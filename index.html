@@ -22,7 +22,7 @@
                 }
                 console.log(encodeURIComponent(JSON.stringify(objToDeep)))
                 console.log(JSON.stringify(objToDeep))
-                window.location.href = `tronlinkoutside://pull.activity?param=${encodeURIComponent(JSON.stringify(objToDeep))}`
+                window.location.href = `tronlinkoutside://pull.activity?param=${JSON.stringify(objToDeep)}`
             })
         })
     </script>

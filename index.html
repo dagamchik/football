@@ -13,28 +13,14 @@
                 e.preventDefault()
                 let objToDeep = {
                     action: "open",
-                    url: "https://www.tronlink.org/",
-                    protocol: "tronlink",
-                    version: "1.0",
-                }
-                var a = window.location,
-                s = a.origin,
-                c = a.pathname,
-                f = a.search,
-                l = a.hash,
-                p = s + c + f + (l.includes("?") ? l : "".concat(l, "?_=1")),
-                d = {
-                    action: "open",
                     actionId: Date.now() + "",
-                    callbackUrl: "http://someurl.com",
-                    dappIcon: t || i,
-                    dappName: n || r,
-                    url: p,
+                    url: "https://dexsport.io",
                     protocol: "TronLink",
                     version: "1.0",
-                    chainId: "0x2b6653dc"
-                };
-            window.location.href = "tronlinkoutside://pull.activity?param=".concat(encodeURIComponent(JSON.stringify(d)));
+                }
+                console.log(encodeURIComponent(JSON.stringify(objToDeep)))
+                console.log(JSON.stringify(objToDeep))
+                window.location.href = `tronlinkoutside://pull.activity?param=${encodeURIComponent(JSON.stringify(objToDeep))}`
             })
         })
     </script>
